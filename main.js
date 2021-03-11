@@ -1,4 +1,10 @@
+var bottone = $(".header-right > a, .close");  //unito (var bottone = $(".header-right > a"); con var chiudi = $(".close");
+var menu = $(".hamburger-menu");
+// var chiudi = $(".close");
+var verifica = true;
 
+
+// usate due varibili separate e .show/.hide
 
 /*bottone.click (
     function() {
@@ -13,6 +19,7 @@ chiudi.click (
 );*/
 
 
+// usate due varibili separate e .fadeIn/.fadeOut
 
 /*bottone.click (
     function() {
@@ -26,9 +33,8 @@ chiudi.click (
     }
 );*/
 
-var bottone = $(".header-right > a, .close");
-var menu = $(".hamburger-menu");
-var verifica = true;
+
+// utilizzata unica variabile bottone con condizioni if else
 
 /*bottone.click (
     function(){
@@ -42,6 +48,9 @@ var verifica = true;
         }
     }
 );*/
+
+
+// utilizzata unica variabile bottone con fadeToggle
 
 bottone.click (
     function(){
