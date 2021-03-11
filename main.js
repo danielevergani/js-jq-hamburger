@@ -12,6 +12,8 @@ chiudi.click (
     }
 );*/
 
+
+
 /*bottone.click (
     function() {
         menu.fadeIn();
@@ -28,7 +30,7 @@ var bottone = $(".header-right > a, .close");
 var menu = $(".hamburger-menu");
 var verifica = true;
 
-bottone.click (
+/*bottone.click (
     function(){
         if (verifica == true){
             menu.fadeIn()
@@ -39,4 +41,12 @@ bottone.click (
             verifica = true
         }
     }
+);*/
+
+bottone.click (
+    function(){
+        menu.fadeToggle()
+    }
 );
+
+
