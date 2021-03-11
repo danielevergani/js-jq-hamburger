@@ -1,6 +1,4 @@
-var bottone = $(".header-right > a");
-var menu = $(".hamburger-menu");
-var chiudi = $(".close");
+
 
 /*bottone.click (
     function() {
@@ -14,7 +12,7 @@ chiudi.click (
     }
 );*/
 
-bottone.click (
+/*bottone.click (
     function() {
         menu.fadeIn();
     }
@@ -24,5 +22,21 @@ chiudi.click (
     function() {
         menu.fadeOut();
     }
-);
+);*/
 
+var bottone = $(".header-right > a, .close");
+var menu = $(".hamburger-menu");
+var verifica = true;
+
+bottone.click (
+    function(){
+        if (verifica == true){
+            menu.fadeIn()
+            verifica = false
+        }
+        else{
+            menu.fadeOut()
+            verifica = true
+        }
+    }
+);
