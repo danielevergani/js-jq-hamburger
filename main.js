@@ -1,61 +1,71 @@
-var bottone = $(".header-right > a, .close");  //unito (var bottone = $(".header-right > a"); con var chiudi = $(".close");
-var menu = $(".hamburger-menu");
+var $bottone = $(".header-right > a, .close");  //unito (var $bottone = $(".header-right > a"); con var chiudi = $(".close");
+var $menu = $(".hamburger-menu");
 // var chiudi = $(".close");
-var verifica = true;
+var $verifica = true;
 
+function chiudiApri (elemento){
+    elemento.fadeToggle();
+}
 
 // usate due varibili separate e .show/.hide
 
-/*bottone.click (
+/*$bottone.click (
     function() {
-        menu.show();
+        $menu.show();
     }
 );
 
 chiudi.click (
     function() {
-        menu.hide();
+        $menu.hide();
     }
 );*/
 
 
 // usate due varibili separate e .fadeIn/.fadeOut
 
-/*bottone.click (
+/*$bottone.click (
     function() {
-        menu.fadeIn();
+        $menu.fadeIn();
     }
 );
 
 chiudi.click (
     function() {
-        menu.fadeOut();
+        $menu.fadeOut();
     }
 );*/
 
 
-// utilizzata unica variabile bottone con condizioni if else
+// utilizzata unica variabile $bottone con condizioni if else
 
-/*bottone.click (
+/*$bottone.click (
     function(){
-        if (verifica == true){
-            menu.fadeIn()
-            verifica = false
+        if ($verifica == true){
+            $menu.fadeIn()
+            $verifica = false
         }
         else{
-            menu.fadeOut()
-            verifica = true
+            $menu.fadeOut()
+            $verifica = true
         }
     }
 );*/
 
 
-// utilizzata unica variabile bottone con fadeToggle
+// utilizzata unica variabile $bottone con fadeToggle
 
-bottone.click (
+/*$bottone.click (
     function(){
-        menu.fadeToggle()
+        $menu.fadeToggle();
     }
+);*/
+
+
+// invocando funzione
+
+$bottone.click (
+    function() {chiudiApri($menu); }
 );
 
 
